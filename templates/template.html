@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video Content Analysis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+      @font-face { font-family: open_sans; src: url(https://aniveera.com/lib/fonts/OpenSans-SemiBold.ttf); }
+      @font-face { font-family: rale; src: url(https://aniveera.com/lib/fonts/Raleway-Regular.ttf); }
+      body {
+        background: linear-gradient(to left, #2196F3, #64B5F6);
+      }
+      .container {
+        max-width: 600px;
+        padding-top: 70px;
+      }
+      h1 {
+        padding-bottom: 20px;
+        font-family: "open_sans";
+        font-size: 40px;
+        color: white;
+      }
+      h3 {
+        font-family: "open_sans";
+        font-size: 25px;
+        color: white;
+      }
+      p {
+        font-family: "rale";
+        font-size: 16px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Your Video Report</h1>
+      <h3>1) Emotional Analysis</h3>
+      <p>Your positivity score is: <b>{{positivity}}</b> / 100.</p>
+      <p>Your prevailing facial expression is: <b>{{expression}}.</b></p>
+      <p>The most prevalent emotional tone is <b>{{emotional}}</b>, language tone is <b>{{language}}</b>, and social tone is <b>{{social}}.</b></p>
+      <h3>2) Highlighted Content</h3>
+      <p>Your top three key phrases are <b>{{one}}</b>, <b>{{two}}</b>, and <b>{{three}}.</b></p>
+      <p>Your five most common words are <b>{{onew}}</b>, <b>{{twow}}</b>, <b>{{threew}}</b>, <b>{{fourw}}</b>, and <b>{{fivew}}.</b></p>
+      <h3>3) Professionalism</h3>
+      <p>You had <b>{{grammar}}</b> grammar mistakes and <b>{{word}}</b> word choice mistakes.</p>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
