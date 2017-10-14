@@ -346,5 +346,12 @@ def template_test():
 						   grammar=output['grammar'], word=output['words'])
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	ON_HEROKU = os.environ.get('ON_HEROKU')
+
+	if ON_HEROKU:
+   		# get the heroku port
+    		serve_port = int(os.environ.get('PORT', 17995))  # as per OP comments default is 17995
+	else:
+    		serve_port = 3000
+	app.run(debug=True, port=serve_port)
 
