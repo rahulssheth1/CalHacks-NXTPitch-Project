@@ -2,4 +2,3 @@ pdfminer
 watson-developer-cloud
 Jinja2
 Flask
-crowdemotion-api-client-python
